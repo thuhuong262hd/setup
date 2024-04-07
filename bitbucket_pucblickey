@@ -9,7 +9,7 @@ genrate ssh key: ssh-keygen -t ed25519 -b 4096 -C "{username@emaildomain.com}" -
 (you can find username on the Account Setting page, it is not the logged email on Bitbucket)
 
 2. Add the new created key on client
-add key: ssh -T git@bitbucket.org
+add key: ssh-add ~/.ssh/id_rsa
 
 3. Go to Bitbucket, add the public key
 check key works: ssh -T git@bitbucket.org
